@@ -1,0 +1,140 @@
+html,
+body {
+    margin: 0;
+}
+
+.curved {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    width: 100%;
+    height: 40%;
+    background-color: #3f5cef;
+    background: linear-gradient(180deg, rgba(101, 125, 249, 1) 0%, rgba(63, 92, 239, 1) 90%);
+    color: #fff;
+}
+
+.background-curved {
+    z-index: -2;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.menu {
+    font-size: 19px;
+}
+
+.nav-flex {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.logo-flex {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.menu-flex {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-submenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.flex-submenu-item {
+    margin: 0 1em;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.submenu-item {
+    font-size: 17px;
+    font-weight: 700;
+    /*text-decoration: underline;*/
+}
+
+input[type=text] {
+    color: white;
+    direction: ltr;
+    margin: 15px 0;
+    padding: 15px 10px;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: 0.2s ease all;
+}
+
+::placeholder {
+    color: #3249bb;
+}
+
+.start-shorting {
+    margin: 0 0 0 0.4em;
+}
+
+.info-section {
+    position: relative;
+    top: 630px;
+    z-index: 10;
+    color: black;
+}
+
+.center {
+    margin: 4em auto 0em auto;
+    width: 70%;
+}
+
+.shorten-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.shorten-element {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}

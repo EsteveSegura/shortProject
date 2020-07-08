@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.header-logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.header {
+    padding-top: 4em;
+    width: 100%;
+    height: 100%;
+    background-color: #3f5cef;
+    background: linear-gradient(180deg, rgba(120, 143, 255, 1) 0%, rgba(63, 92, 239, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-header {
+    position: relative;
+    height: 30%;
+}
+
+.curved {
+    z-index: -1;
+    position: absolute;
+    top: 290px;
+    height: 30%;
+    width: 100%;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}

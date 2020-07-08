@@ -15,6 +15,7 @@ mongoose.connect('mongodb://localhost/shortProject', { useNewUrlParser: true, us
 
 const app = express();
 
+app.use(cors());
 const router = require('./routes/api');
 const apiLimiter = rateLimit({
     windowMs: 1 * 60 * 1000, //1min
@@ -25,7 +26,6 @@ app.use(userAgent.express())
 app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
-app.use(cors());
 app.use(morgan('combined'));
 app.use('/api/', apiLimiter);
 app.use('/api', router);

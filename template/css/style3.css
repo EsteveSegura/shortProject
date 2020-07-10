@@ -113,6 +113,7 @@ body {
 }
 
 .button-short {
+    font-family: 'Montserrat', sans-serif;
     overflow: visible;
     -webkit-appearance: button;
     background-color: #fcd561;
@@ -125,7 +126,7 @@ body {
     font-size: 16px;
     margin: 0 1em;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 900;
     border-radius: 20px;
 }
 
@@ -153,4 +154,26 @@ button:focus {
 
 ::placeholder {
     color: #3249bb;
+}
+
+.shorted-container {
+    margin: 1em auto 0 auto;
+    width: 53%;
+}
+
+.shorted-box {
+    margin-bottom: 1em;
+    padding: 0.8em 1em;
+    text-decoration: underline;
+    font-weight: 700;
+    color: #e5cbe6;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #261462;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }

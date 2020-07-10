@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style3.css">
     <title>Document</title>
@@ -28,13 +29,18 @@
         <div class="short-container">
             <div class="short-section">
                 <div class="short">
-                    <input type="text" placeholder="Sad">
-                    <button class="button-short">Short</button>
+                    <input type="text" id="url" placeholder="Enter your URL here...">
+                    <button id="short-url" class="button-short">Short</button>
                 </div>
                 <!--<div class="adorno">
                     <img src="./img/zorrito.png" width="220" alt="" srcset="">
                 </div>-->
             </div>
+        </div>
+
+        <div id="shorted-container" class="shorted-container">
+
+
         </div>
 
         <div class="boxes-container">
@@ -67,6 +73,9 @@
         </div>
         -->
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

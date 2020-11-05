@@ -16,7 +16,7 @@ export default {
     const urlShort = ref({});
 
     async function createNewShort() {
-      let createShort = await axios.post("http://girlazo.com/short/api/short", {
+      let createShort = await axios.post("http://girlazo.com/short/s/", {
         url: newShort.value,
       });
 

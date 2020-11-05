@@ -38,7 +38,7 @@ export default {
   setup(props) {
     console.log(props.index);
     const dataShort = ref(shorts.findShortById(props.id));
-    const fullUrl = ref("http://girlazo.com/short/api/s/" + props.url);
+    const fullUrl = ref("http://girlazo.com/short/s/" + props.url);
 
     async function checkStats() {
       let getNewData = await axios.get(fullUrl.value + "/a");

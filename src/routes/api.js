@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     res.json({ 'message': 'SERVER RUNNING' });
 });
 
-router.post('/short', async (req, res) => {
+router.post('/s', async (req, res) => {
     let url = req.body.url;
     if (typeof url != "undefined") {
         let isUrl = utilsUrl.checkIfIsUrl(url);
@@ -37,8 +37,6 @@ router.get('/s/:shortCode', async (req, res) => {
     let findUrlBehind = await dataBase.someOneClickedOnLink(shortCode, country, sO, browser);
     console.log(findUrlBehind)
     res.redirect(findUrlBehind);
-    
-
 });
 
 router.get('/s/:shortCode/a', async (req, res) => {

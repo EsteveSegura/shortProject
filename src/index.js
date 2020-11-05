@@ -27,9 +27,10 @@ app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('combined'));
+app.use(express.static(`${__dirname}/public`))
 app.use('/api/', apiLimiter);
 app.use('/api', router);
 
-app.listen(3000, () => {
+app.listen(7845, () => {
     console.log("APP runnning on port 3000");
 });

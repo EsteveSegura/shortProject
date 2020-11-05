@@ -1,4 +1,4 @@
-# shortproject
+# short-project
 
 ## Project setup
 ```

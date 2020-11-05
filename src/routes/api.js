@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     res.json({ 'message': 'SERVER RUNNING' });
 });
 
-router.post('/short', async(req, res) => {
+router.post('/short', async (req, res) => {
     let url = req.body.url;
     if (typeof url != "undefined") {
         let isUrl = utilsUrl.checkIfIsUrl(url);
@@ -23,11 +23,11 @@ router.post('/short', async(req, res) => {
     }
 });
 
-router.get('/s/:shortCode', async(req, res) => {
+router.get('/s/:shortCode', async (req, res) => {
     const shortCode = req.params.shortCode.toLowerCase();
 
     let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-    ip = "35.227.62.178"; //FORCE
+    //ip = "35.227.62.178"; //FORCE
     let geoLocateIp = geoip.lookup(ip);
     let userAgent = req.useragent;
 
@@ -37,11 +37,11 @@ router.get('/s/:shortCode', async(req, res) => {
     let findUrlBehind = await dataBase.someOneClickedOnLink(shortCode, country, sO, browser);
     console.log(findUrlBehind)
     res.redirect(findUrlBehind);
-    8
+    
 
 });
 
-router.get('/s/:shortCode/a', async(req, res) => {
+router.get('/s/:shortCode/a', async (req, res) => {
     try {
         const shortCode = req.params.shortCode.toLowerCase();
         let data = await dataBase.checkDataFromCode(shortCode);
